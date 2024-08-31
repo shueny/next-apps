@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // <=== enables static exports
+  output: 'export', // Enables static exports
   reactStrictMode: true,
+  basePath: '/next-blog', // Replace with your repository name
+  assetPrefix: '/next-blog/', // Replace with your repository name
+  images: {
+    unoptimized: true,
+  },
 }
 
-module.exports = nextConfig
 export default nextConfig
