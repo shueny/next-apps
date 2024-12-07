@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Enables static exports
+  output: 'export',
   reactStrictMode: true,
-  basePath: '/next-blog', // Replace with your repository name
-  assetPrefix: '/next-blog/', // Replace with your repository name
+  basePath: '/next-apps', 
+  assetPrefix: '/next-apps/',
   images: {
     unoptimized: true,
   },
