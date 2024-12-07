@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import { Box, Theme, Flex, Container } from "@radix-ui/themes";
 import { Inter } from "next/font/google";
+import NavigationMenuComponent from "@/components/header";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,7 +19,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <Theme>
+            <Container size="1">
+              <Flex direction={'column'} style={{display: 'flex'}}>
+                <Image src="./assets/logo.svg" alt="logo" width={30} height={30} />
+                <NavigationMenuComponent/>
+              </Flex>
+              <Flex>{children}</Flex>
+            </Container>
+        </Theme>
+      </body>
     </html>
   );
 }
