@@ -37,14 +37,14 @@ const NavigationMenuComponent = () => {
 							</li>
 
 							<ListItem href="https://stitches.dev/" title="Stitches">
-								CSS-in-JS with best-in-class developer experience.
+								Quiz card
 							</ListItem>
-							<ListItem href="/colors" title="Colors">
+							{/* <ListItem href="/colors" title="Colors">
 								Beautiful, thought-out palettes with auto dark mode.
 							</ListItem>
 							<ListItem href="https://icons.radix-ui.com/" title="Icons">
 								A crisp set of 15x15 icons, balanced and consistent.
-							</ListItem>
+							</ListItem> */}
 						</ul>
 					</NavigationMenu.Content>
 				</NavigationMenu.Item>
