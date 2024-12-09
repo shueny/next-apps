@@ -1,0 +1,934 @@
+[
+  {
+    "level": "High",
+    "title": "Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models."
+  },
+  {
+    "level": "High",
+    "title": "What does `* { box-sizing: border-box; }` do?"
+  },
+  {
+    "level": "High",
+    "title": "What is CSS selector specificity and how does it work?"
+  },
+  {
+    "level": "High",
+    "title": "What is the CSS `display` property and can you give a few examples of its use?"
+  },
+  {
+    "level": "High",
+    "title": "What's the difference between a `relative`, `fixed`, `absolute`, `sticky` and `static`-ally positioned element?"
+  },
+  {
+    "level": "High",
+    "title": "What's the difference between `inline` and `inline-block`?"
+  },
+  {
+    "level": "High",
+    "title": "Explain the concept of \"hoisting\" in JavaScript"
+  },
+  {
+    "level": "High",
+    "title": "What are the differences between JavaScript variables created using `let`, `var` or `const`?"
+  },
+  {
+    "level": "High",
+    "title": "What is the difference between `==` and `===` in JavaScript?"
+  },
+  {
+    "level": "High",
+    "title": "What is the event loop in JavaScript runtimes?"
+  },
+  {
+    "level": "High",
+    "title": "Explain event delegation in JavaScript"
+  },
+  {
+    "level": "High",
+    "title": "Explain how `this` works in JavaScript"
+  },
+  {
+    "level": "High",
+    "title": "Describe the difference between a cookie, `sessionStorage` and `localStorage` in browsers"
+  },
+  {
+    "level": "High",
+    "title": "Describe the difference between `<script>`, `<script async>` and `<script defer>`"
+  },
+  {
+    "level": "High",
+    "title": "What's the difference between a JavaScript variable that is: `null`, `undefined` or undeclared?"
+  },
+  {
+    "level": "High",
+    "title": "What's the difference between `.call` and `.apply` in JavaScript?"
+  },
+  {
+    "level": "High",
+    "title": "Why is it generally a good idea to position CSS `<link>`s between `<head></head>` and JS `<script>`s just before `</body>`?"
+  },
+  {
+    "level": "High",
+    "title": "Explain how a browser determines what elements match a CSS selector."
+  },
+  {
+    "level": "High",
+    "title": "Have you played around with the new CSS Flexbox or Grid specs?"
+  },
+  {
+    "level": "High",
+    "title": "Is there any reason you'd want to use `translate()` instead of `absolute` positioning, or vice-versa? And why?"
+  },
+  {
+    "level": "High",
+    "title": "Explain `Function.prototype.bind` in JavaScript"
+  },
+  {
+    "level": "High",
+    "title": "Explain how prototypal inheritance works in JavaScript"
+  },
+  {
+    "level": "High",
+    "title": "What's a typical use case for anonymous functions in JavaScript?"
+  },
+  {
+    "level": "High",
+    "title": "What are the various ways to create objects in JavaScript?"
+  },
+  {
+    "level": "High",
+    "title": "What is a closure in JavaScript, and how/why would you use one?"
+  },
+  {
+    "level": "High",
+    "title": "Describe event bubbling in JavaScript and browsers"
+  },
+  {
+    "level": "High",
+    "title": "Describe event capturing in JavaScript and browsers"
+  },
+  {
+    "level": "High",
+    "title": "Explain the difference between synchronous and asynchronous functions in JavaScript"
+  },
+  {
+    "level": "High",
+    "title": "What are the pros and cons of using Promises instead of callbacks in JavaScript?"
+  },
+  {
+    "level": "High",
+    "title": "What language constructs do you use for iterating over object properties and array items in JavaScript?"
+  },
+  {
+    "level": "High",
+    "title": "What is the difference between a `Map` object and a plain object in JavaScript?"
+  },
+  {
+    "level": "High",
+    "title": "What are the differences between `Map`/`Set` and `WeakMap`/`WeakSet` in JavaScript?"
+  },
+  {
+    "level": "High",
+    "title": "What are `Symbol`s used for in JavaScript?"
+  },
+  {
+    "level": "High",
+    "title": "What are workers in JavaScript used for?"
+  },
+  {
+    "level": "High",
+    "title": "Can you offer a use case for the new arrow => function syntax?"
+  },
+  {
+    "level": "Mid",
+    "title": "Describe Block Formatting Context (BFC) and how it works."
+  },
+  {
+    "level": "Mid",
+    "title": "Describe `float`s and how they work."
+  },
+  {
+    "level": "Mid",
+    "title": "Describe pseudo-elements and discuss what they are used for."
+  },
+  {
+    "level": "Mid",
+    "title": "Describe `z-index` and how stacking context is formed."
+  },
+  {
+    "level": "Mid",
+    "title": "What kind of things must you be wary of when designing or developing for multilingual sites?"
+  },
+  {
+    "level": "Mid",
+    "title": "Explain CSS sprites, and how you would implement them on a page or site."
+  },
+  {
+    "level": "Mid",
+    "title": "Have you ever used a grid system, and if so, what do you prefer?"
+  },
+  {
+    "level": "Mid",
+    "title": "How do you serve a page with content in multiple languages?"
+  },
+  {
+    "level": "Mid",
+    "title": "How do you serve your pages for feature-constrained browsers?"
+  },
+  {
+    "level": "Mid",
+    "title": "How is responsive design different from adaptive design?"
+  },
+  {
+    "level": "Mid",
+    "title": "How would you approach fixing browser-specific styling issues?"
+  },
+  {
+    "level": "Mid",
+    "title": "What are `data-` attributes good for?"
+  },
+  {
+    "level": "Mid",
+    "title": "What are the advantages/disadvantages of using CSS preprocessors?"
+  },
+  {
+    "level": "Mid",
+    "title": "What are the different ways to visually hide content (and make it available only for screen readers)?"
+  },
+  {
+    "level": "Mid",
+    "title": "What is progressive rendering?"
+  },
+  {
+    "level": "Mid",
+    "title": "What's the difference between feature detection, feature inference, and using the UA string?"
+  },
+  {
+    "level": "Mid",
+    "title": "What's the difference between \"resetting\" and \"normalizing\" CSS?"
+  },
+  {
+    "level": "Mid",
+    "title": "Why you would use a `srcset` attribute in an image tag?"
+  },
+  {
+    "level": "Mid",
+    "title": "What advantage is there for using the JavaScript arrow syntax for a method in a constructor?"
+  },
+  {
+    "level": "Mid",
+    "title": "Difference between: `function Person(){}`, `const person = Person()`, and `const person = new Person()` in JavaScript?"
+  },
+  {
+    "level": "Mid",
+    "title": "Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}` in JavaScript"
+  },
+  {
+    "level": "Mid",
+    "title": "What is the definition of a higher-order function in JavaScript?"
+  },
+  {
+    "level": "Mid",
+    "title": "What are the differences between JavaScript ES2015 classes and ES5 function constructors?"
+  },
+  {
+    "level": "Mid",
+    "title": "What is `'use strict';` in JavaScript for?"
+  },
+  {
+    "level": "Mid",
+    "title": "Explain AJAX in as much detail as possible"
+  },
+  {
+    "level": "Mid",
+    "title": "What are the differences between `XMLHttpRequest` and `fetch()` in JavaScript and browsers?"
+  },
+  {
+    "level": "Mid",
+    "title": "How do you abort a web request using `AbortController` in JavaScript?"
+  },
+  {
+    "level": "Mid",
+    "title": "What are JavaScript polyfills for?"
+  },
+  {
+    "level": "Mid",
+    "title": "Why is it, in general, a good idea to leave the global JavaScript scope of a website as-is and never touch it?"
+  },
+  {
+    "level": "Mid",
+    "title": "Explain the differences between CommonJS modules and ES modules in JavaScript"
+  },
+  {
+    "level": "Mid",
+    "title": "What are iterators and generators in JavaScript and what are they used for?"
+  },
+  {
+    "level": "Mid",
+    "title": "Explain the difference between mutable and immutable objects in JavaScript"
+  },
+  {
+    "level": "Mid",
+    "title": "What are server-sent events?"
+  },
+  {
+    "level": "Mid",
+    "title": "What are JavaScript object property flags and descriptors?"
+  },
+  {
+    "level": "Mid",
+    "title": "What are JavaScript object getters and setters for?"
+  },
+  {
+    "level": "Mid",
+    "title": "How does JavaScript garbage collection work?"
+  },
+  {
+    "level": "Mid",
+    "title": "Explain how JSONP works (and how it's not really Ajax)"
+  },
+  {
+    "level": "Mid",
+    "title": "Explain what a single page app is and how to make one SEO-friendly"
+  },
+  {
+    "level": "Mid",
+    "title": "What's the difference between an \"attribute\" and a \"property\" in the DOM?"
+  },
+  {
+    "level": "Low",
+    "title": "Are you familiar with styling SVG?"
+  },
+  {
+    "level": "Low",
+    "title": "Can you explain the difference between coding a website to be responsive versus using a mobile-first strategy?"
+  },
+  {
+    "level": "Low",
+    "title": "Can you give an example of an `@media` property other than `screen`?"
+  },
+  {
+    "level": "Low",
+    "title": "Describe what you like and dislike about the CSS preprocessors you have used."
+  },
+  {
+    "level": "Low",
+    "title": "Have you ever worked with retina graphics?"
+  },
+  {
+    "level": "Low",
+    "title": "Have you used or implemented media queries or mobile-specific layouts/CSS?"
+  },
+  {
+    "level": "Low",
+    "title": "Consider HTML5 as an open web platform. What are the building blocks of HTML5?"
+  },
+  {
+    "level": "Low",
+    "title": "What are some of the \"gotchas\" for writing efficient CSS?"
+  },
+  {
+    "level": "Low",
+    "title": "What are the various clearing techniques and which is appropriate for what context?"
+  },
+  {
+    "level": "Low",
+    "title": "What does a `DOCTYPE` do?"
+  },
+  {
+    "level": "Low",
+    "title": "What existing CSS frameworks have you used locally, or in production?"
+  },
+  {
+    "level": "Low",
+    "title": "Why would you use something like the `load` event?"
+  },
+  {
+    "level": "Low",
+    "title": "What is the difference between `mouseenter` and `mouseover` event in JavaScript and browsers?"
+  },
+  {
+    "level": "Low",
+    "title": "What are the advantages and disadvantages of using AJAX?"
+  },
+  {
+    "level": "Low",
+    "title": "Why is extending built-in JavaScript objects not a good idea?"
+  },
+  {
+    "level": "Low",
+    "title": "What are the various data types in JavaScript?"
+  },
+  {
+    "level": "Low",
+    "title": "What are the benefits of using spread syntax in JavaScript and how is it different from rest syntax?"
+  },
+  {
+    "level": "Low",
+    "title": "Why might you want to create static class members in JavaScript?"
+  },
+  {
+    "level": "Low",
+    "title": "What are proxies in JavaScript used for?"
+  },
+  {
+    "level": "Low",
+    "title": "What tools and techniques do you use for debugging JavaScript code?"
+  },
+  {
+    "level": "Low",
+    "title": "Difference between document `load` event and document `DOMContentLoaded` event?"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of a callback function in asynchronous operations"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of a microtask queue"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of caching and how it can be used to improve performance"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of code coverage and how it can be used to assess test quality"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of Content Security Policy (CSP) and how it enhances security"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of Cross-Site Request Forgery (CSRF) and its mitigation techniques"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of debouncing and throttling"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of destructuring assignment for objects and arrays"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of error propagation in JavaScript"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of hoisting with regards to functions"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of inheritance in ES2015 classes"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of input validation and its importance in security"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of lazy loading and how it can improve performance"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of lexical scoping"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of partial application"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of scope in JavaScript"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of tagged templates"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of test-driven development (TDD)"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of the Prototype pattern"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of the Singleton pattern"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of the spread operator and its uses"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of the Strategy pattern"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of the Web Socket API"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of `this` binding in event handlers"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the concept of tree shaking in module bundling"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the difference between classical inheritance and prototypal inheritance"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the difference between `document.querySelector()` and `document.getElementById()`"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the difference between dot notation and bracket notation for accessing object properties"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the difference between global scope, function scope, and block scope"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the difference between shallow copy and deep copy"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the difference between unit testing, integration testing, and end-to-end testing"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the difference in hoisting between `var`, `let`, and `const`"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the different states of a Promise"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the different ways the `this` keyword can be bound"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the event phases in a browser"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the Observer pattern and its use cases"
+  },
+  {
+    "level": "Low",
+    "title": "Explain the same-origin policy with regards to JavaScript"
+  },
+  {
+    "level": "Low",
+    "title": "Explain why the following doesn't work as an IIFE: `function foo(){ }();`. What needs to be changed to properly make it an IIFE?"
+  },
+  {
+    "level": "Low",
+    "title": "How can closures be used to create private variables?"
+  },
+  {
+    "level": "Low",
+    "title": "How can you avoid problems related to hoisting?"
+  },
+  {
+    "level": "Low",
+    "title": "How can you create custom error objects?"
+  },
+  {
+    "level": "Low",
+    "title": "How can you implement secure authentication and authorization in JavaScript applications?"
+  },
+  {
+    "level": "Low",
+    "title": "How can you optimize DOM manipulation for better performance?"
+  },
+  {
+    "level": "Low",
+    "title": "How can you optimize network requests for better performance?"
+  },
+  {
+    "level": "Low",
+    "title": "How can you prevent clickjacking attacks?"
+  },
+  {
+    "level": "Low",
+    "title": "How can you prevent SQL injection vulnerabilities in JavaScript applications?"
+  },
+  {
+    "level": "Low",
+    "title": "How can you share code between JavaScript files?"
+  },
+  {
+    "level": "Low",
+    "title": "How can you test asynchronous code in JavaScript?"
+  },
+  {
+    "level": "Low",
+    "title": "How do currying and partial application differ from each other?"
+  },
+  {
+    "level": "Low",
+    "title": "How do `<iframe>` on a page communicate?"
+  },
+  {
+    "level": "Low",
+    "title": "How do `Set`s and `Map`s handle equality checks for objects?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you access the index of an element in an array during iteration?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you add, remove, and modify HTML elements using JavaScript?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you add, remove, and update elements in an array?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you check if an object has a specific property?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you check the data type of a variable?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you convert a `Set` to an array in JavaScript?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you convert a string to a number in JavaScript?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you create a constructor function?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you detect if JavaScript is disabled on a page?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you get the query string values of the current page in JavaScript?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you handle errors in asynchronous operations?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you handle errors using `try...catch` blocks?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you import and export modules in JavaScript?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you make an HTTP request using the Fetch API?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you manipulate CSS styles using JavaScript?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you organize your code?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you prevent the default behavior of an event?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you redirect to a new page in JavaScript?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you reliably determine whether an object is empty?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you use `window.history` API?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you validate form elements using the Constraint Validation API?"
+  },
+  {
+    "level": "Low",
+    "title": "How do you write unit tests for JavaScript code?"
+  },
+  {
+    "level": "Low",
+    "title": "How does hoisting affect function declarations and expressions?"
+  },
+  {
+    "level": "Low",
+    "title": "How is `Promise.all()` different from `Promise.allSettled()`?"
+  },
+  {
+    "level": "Low",
+    "title": "Provide some examples of how currying and partial application can be used"
+  },
+  {
+    "level": "Low",
+    "title": "What are callback functions and how are they used?"
+  },
+  {
+    "level": "Low",
+    "title": "What are default parameters and how are they used?"
+  },
+  {
+    "level": "Low",
+    "title": "What are design patterns and why are they useful?"
+  },
+  {
+    "level": "Low",
+    "title": "What are event listeners and how are they used?"
+  },
+  {
+    "level": "Low",
+    "title": "What are mocks and stubs and how are they used in testing?"
+  },
+  {
+    "level": "Low",
+    "title": "What are modules and why are they useful?"
+  },
+  {
+    "level": "Low",
+    "title": "What are Progressive Web Applications (PWAs)?"
+  },
+  {
+    "level": "Low",
+    "title": "What are Promises and how do they work?"
+  },
+  {
+    "level": "Low",
+    "title": "What are rest parameters and how are they used?"
+  },
+  {
+    "level": "Low",
+    "title": "What are `Set`s and `Map`s and how are they used?"
+  },
+  {
+    "level": "Low",
+    "title": "What are some best practices for handling sensitive data in JavaScript?"
+  },
+  {
+    "level": "Low",
+    "title": "What are some best practices for writing maintainable and effective tests in JavaScript?"
+  },
+  {
+    "level": "Low",
+    "title": "What are some common performance bottlenecks in JavaScript applications?"
+  },
+  {
+    "level": "Low",
+    "title": "What are some common security headers and their purpose?"
+  },
+  {
+    "level": "Low",
+    "title": "What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?"
+  },
+  {
+    "level": "Low",
+    "title": "What are some popular JavaScript testing frameworks?"
+  },
+  {
+    "level": "Low",
+    "title": "What are some techniques for reducing reflows and repaints?"
+  },
+  {
+    "level": "Low",
+    "title": "What are some tools and techniques for identifying security vulnerabilities in JavaScript code?"
+  },
+  {
+    "level": "Low",
+    "title": "What are some tools that can be used for JavaScript testing?"
+  },
+  {
+    "level": "Low",
+    "title": "What are some tools that can be used to measure and analyze JavaScript performance?"
+  },
+  {
+    "level": "Low",
+    "title": "What are template literals and how are they used?"
+  },
+  {
+    "level": "Low",
+    "title": "What are the advantages of using the spread operator with arrays and objects?"
+  },
+  {
+    "level": "Low",
+    "title": "What are the benefits of using a module bundler?"
+  },
+  {
+    "level": "Low",
+    "title": "What are the benefits of using currying and partial application?"
+  },
+  {
+    "level": "Low",
+    "title": "What are the common pitfalls of using the `this` keyword?"
+  },
+  {
+    "level": "Low",
+    "title": "What are the different methods for iterating over an array?"
+  },
+  {
+    "level": "Low",
+    "title": "What are the different types of errors in JavaScript?"
+  },
+  {
+    "level": "Low",
+    "title": "What are the different types of testing in software development?"
+  },
+  {
+    "level": "Low",
+    "title": "What are the different ways to copy an object or an array?"
+  },
+  {
+    "level": "Low",
+    "title": "What are the different ways to make an API call in JavaScript?"
+  },
+  {
+    "level": "Low",
+    "title": "What are the metadata fields of a module?"
+  },
+  {
+    "level": "Low",
+    "title": "What are the potential issues caused by hoisting?"
+  },
+  {
+    "level": "Low",
+    "title": "What are the potential pitfalls of using closures?"
+  },
+  {
+    "level": "Low",
+    "title": "What are Web Workers and how can they be used to improve performance?"
+  },
+  {
+    "level": "Low",
+    "title": "What do you think of AMD vs CommonJS?"
+  },
+  {
+    "level": "Low",
+    "title": "What is async/await and how does it simplify asynchronous code?"
+  },
+  {
+    "level": "Low",
+    "title": "What is Cross-Site Scripting (XSS) and how can you prevent it?"
+  },
+  {
+    "level": "Low",
+    "title": "What is currying and how does it work?"
+  },
+  {
+    "level": "Low",
+    "title": "What is `Object.freeze()` for?"
+  },
+  {
+    "level": "Low",
+    "title": "What is `Object.preventExtensions()` for?"
+  },
+  {
+    "level": "Low",
+    "title": "What is `Object.seal()` for?"
+  },
+  {
+    "level": "Low",
+    "title": "What is recursion and how is it used in JavaScript?"
+  },
+  {
+    "level": "Low",
+    "title": "What is the Command pattern and how is it used?"
+  },
+  {
+    "level": "Low",
+    "title": "What is the Decorator pattern and how is it used?"
+  },
+  {
+    "level": "Low",
+    "title": "What is the difference between a parameter and an argument?"
+  },
+  {
+    "level": "Low",
+    "title": "What is the difference between `event.preventDefault()` and `event.stopPropagation()`?"
+  },
+  {
+    "level": "Low",
+    "title": "What is the difference between `innerHTML` and `textContent`?"
+  },
+  {
+    "level": "Low",
+    "title": "What is the difference between `setTimeout()`, `setImmediate()`, and `process.nextTick()`?"
+  },
+  {
+    "level": "Low",
+    "title": "What is the difference between the Window object and the Document object?"
+  },
+  {
+    "level": "Low",
+    "title": "What is the DOM and how is it structured?"
+  },
+  {
+    "level": "Low",
+    "title": "What is the Factory pattern and how is it used?"
+  },
+  {
+    "level": "Low",
+    "title": "What is the `Intl` namespace object for?"
+  },
+  {
+    "level": "Low",
+    "title": "What is the Module pattern and how does it help with encapsulation?"
+  },
+  {
+    "level": "Low",
+    "title": "What is the prototype chain and how does it work?"
+  },
+  {
+    "level": "Low",
+    "title": "What is the purpose of the `break` and `continue` statements?"
+  },
+  {
+    "level": "Low",
+    "title": "What is the purpose of the `finally` block?"
+  },
+  {
+    "level": "Low",
+    "title": "What is the purpose of the `new` keyword?"
+  },
+  {
+    "level": "Low",
+    "title": "What is the purpose of the `switch` statement?"
+  },
+  {
+    "level": "Low",
+    "title": "What is the spread operator and how is it used?"
+  },
+  {
+    "level": "Low",
+    "title": "What is the ternary operator and how is it used?"
+  },
+  {
+    "level": "Low",
+    "title": "What is the use of `Promise.all()`"
+  },
+  {
+    "level": "Low",
+    "title": "When would you use `document.write()`?"
+  }
+]

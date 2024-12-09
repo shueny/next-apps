@@ -36,8 +36,8 @@ const NavigationMenuComponent = () => {
 								</NavigationMenu.Link>
 							</li>
 
-							<ListItem href="https://stitches.dev/" title="Stitches">
-								Quiz card
+							<ListItem href="/next-apps/quiz-card" title="Quiz card">
+								Generate random questions for JavaScript and React.
 							</ListItem>
 							{/* <ListItem href="/colors" title="Colors">
 								Beautiful, thought-out palettes with auto dark mode.
