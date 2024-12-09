@@ -13,7 +13,6 @@
 
 import { useState } from 'react';
 import { QuestionCard } from '@radix-ui/react-card';
-import { Textarea } from '@radix-ui/react-textarea';
 import { Button } from '@radix-ui/react-button';
 import ReactMarkdown from 'react-markdown';
 
