@@ -12,37 +12,36 @@
 // 
 
 import { useState } from 'react';
-import { QuestionCard } from '@radix-ui/react-card';
-import { Button } from '@radix-ui/react-button';
+import { Button } from "@radix-ui/themes";
 import ReactMarkdown from 'react-markdown';
 
 export default function QuestionCardComponent({ question }) {
-    const [isFlipped, setIsFlipped] = useState(false);
-    const [answer, setAnswer] = useState(question.answer);
+    // const [isFlipped, setIsFlipped] = useState(false);
+    // const [answer, setAnswer] = useState(question.answer);
     
-    const handleFlip = () => {
-        setIsFlipped(!isFlipped);
-    };
+    // const handleFlip = () => {
+    //     setIsFlipped(!isFlipped);
+    // };
     
-    const handleAnswerChange = (event) => {
-        setAnswer(event.target.value);
-    };
+    // const handleAnswerChange = (event) => {
+    //     setAnswer(event.target.value);
+    // };
     
-    const handleEditAnswer = () => {
-        // handle edit answer
-    }   
+    // const handleEditAnswer = () => {
+    //     // handle edit answer
+    // }   
 
-    return (
-        <QuestionCard flipped={isFlipped} onFlipChange={handleFlip}>
-            <QuestionCard.Front>
-                <h3>{question.question}</h3>
-                <Button onClick={handleFlip}>Answer</Button>
-            </QuestionCard.Front>
-            <QuestionCard.Back>
-                <ReactMarkdown>{answer}</ReactMarkdown>
-                <Button onClick={handleEditAnswer}>Edit</Button>
-            </QuestionCard.Back>
-        </QuestionCard>
+    return (<>QuestionCard flip</>
+        // <QuestionCard flipped={isFlipped} onFlipChange={handleFlip}>
+        //     <QuestionCard.Front>
+        //         <h3>{question.question}</h3>
+        //         <Button onClick={handleFlip}>Answer</Button>
+        //     </QuestionCard.Front>
+        //     <QuestionCard.Back>
+        //         <ReactMarkdown>{answer}</ReactMarkdown>
+        //         <Button onClick={handleEditAnswer}>Edit</Button>
+        //     </QuestionCard.Back>
+        // </QuestionCard>
     );
 }
 
