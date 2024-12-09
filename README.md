@@ -1,15 +1,50 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Tools and Languages
+
+- **Framework**: [Next.js](https://nextjs.org/) - A React framework for building server-side rendered applications.
+- **Package Manager**: [pnpm](https://pnpm.js.org/) - A fast, disk space-efficient package manager.
+- **UI Library**: [Radix UI](https://www.radix-ui.com/) - A set of accessible UI components for building high-quality design systems and web applications.
+
+## App Structure
+
+The project structure is organized as follows:
+
+```
+├── src
+│   ├── app
+│   │   ├── layout.tsx          # Root layout for the application
+│   │   └── page.tsx            # Main page component
+│   ├── components
+│   │   ├── header.tsx          # Navigation menu component
+│   │   └── layout.tsx          # Layout component for wrapping pages
+│   ├── pages
+│   │   ├── _app.tsx            # Custom App component for Next.js
+│   │   ├── index.tsx           # Home page component
+│   │   └── quiz-card
+│   │       ├── index.tsx       # Quiz card page component
+│   │       ├── js-quiz.json    # JSON file containing JavaScript questions
+│   │       └── react-quiz.json  # JSON file containing React questions
+│   ├── styles
+│   │   └── globals.css         # Global styles for the application
+│   └── utils                   # Utility functions (if any)
+├── public                       # Static assets (images, etc.)
+├── tailwind.config.ts           # Tailwind CSS configuration
+├── next.config.mjs              # Next.js configuration
+├── package.json                 # Project dependencies and scripts
+└── README.md                    # Project documentation
+```
+
 ## Getting Started
 
 First, run the development server:
 
 ```bash
+pnpm run dev
+# or
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
 # or
 bun dev
 ```
