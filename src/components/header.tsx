@@ -49,50 +49,14 @@ const NavigationMenuComponent = () => {
 					</NavigationMenu.Content>
 				</NavigationMenu.Item>
 
-				{/* <NavigationMenu.Item>
-					<NavigationMenu.Trigger className="NavigationMenuTrigger">
-						Overview <CaretDownIcon className="CaretDown" aria-hidden />
-					</NavigationMenu.Trigger>
-					<NavigationMenu.Content className="NavigationMenuContent">
-						<ul className="List two">
-							<ListItem
-								title="Introduction"
-								href="/primitives/docs/overview/introduction"
-							>
-								Build high-quality, accessible design systems and web apps.
-							</ListItem>
-							<ListItem
-								title="Getting started"
-								href="/primitives/docs/overview/getting-started"
-							>
-								A quick tutorial to get you up and running with Radix
-								Primitives.
-							</ListItem>
-							<ListItem title="Styling" href="/primitives/docs/guides/styling">
-								Unstyled and compatible with any styling solution.
-							</ListItem>
-							<ListItem
-								title="Animation"
-								href="/primitives/docs/guides/animation"
-							>
-								Use CSS keyframes or any animation library of your choice.
-							</ListItem>
-							<ListItem
-								title="Accessibility"
-								href="/primitives/docs/overview/accessibility"
-							>
-								Tested in a range of browsers and assistive technologies.
-							</ListItem>
-							<ListItem
-								title="Releases"
-								href="/primitives/docs/overview/releases"
-							>
-								Radix Primitives releases and their changelogs.
-							</ListItem>
-						</ul>
-					</NavigationMenu.Content>
-				</NavigationMenu.Item> */}
-
+				<NavigationMenu.Item>
+					<NavigationMenu.Link
+						className="NavigationMenuLink"
+						href="/next-apps/blog"
+					>
+						Blog
+					</NavigationMenu.Link>
+				</NavigationMenu.Item>
 				<NavigationMenu.Item>
 					<NavigationMenu.Link
 						className="NavigationMenuLink"

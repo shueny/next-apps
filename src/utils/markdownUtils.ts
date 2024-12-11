@@ -9,8 +9,12 @@ export async function getMarkdownContent(slug: string) {
   const fileContent = fs.readFileSync(filePath, 'utf-8');
 
   const { data, content } = matter(fileContent);
-  const processedContent = await remark().use(html).process(content);
-  return { data, content: processedContent.toString() };
+  //   const processedContent = await remark().use(html).process(content);
+  return {
+    data,
+    content: content, //processedContent.toString(),
+    markdownContent: fileContent,
+  };
 }
 
 export function getBlogPosts() {

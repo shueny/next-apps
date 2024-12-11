@@ -1,3 +1,120 @@
+@import "@radix-ui/colors/gray.css";
+@import "@radix-ui/colors/red.css";
+@import "@radix-ui/colors/gray-dark.css";
+@import "@radix-ui/colors/blue-dark.css";
+@import "@radix-ui/colors/red-dark.css";
+
+
+:root, .light, .light-theme {
+    --blue-1: #fafdfe;
+    --blue-2: #f3fafc;
+    --blue-3: #e3f5fb;
+    --blue-4: #d3eef8;
+    --blue-5: #c2e5f2;
+    --blue-6: #add9e8;
+    --blue-7: #92c9dc;
+    --blue-8: #66b4cc;
+    --blue-9: #107d98;
+    --blue-10: #006f8a;
+    --blue-11: #057994;
+    --blue-12: #1b3d48;
+  
+    --blue-a1: #0099cc05;
+    --blue-a2: #0095c00c;
+    --blue-a3: #00a4db1c;
+    --blue-a4: #009dd72c;
+    --blue-a5: #0093c93d;
+    --blue-a6: #0089b852;
+    --blue-a7: #0081ae6d;
+    --blue-a8: #0082aa99;
+    --blue-a9: #007491ef;
+    --blue-a10: #006f8a;
+    --blue-a11: #007692fa;
+    --blue-a12: #002632e4;
+  
+    --blue-contrast: #fff;
+    --blue-surface: #f0f9fbcc;
+    --blue-indicator: #107d98;
+    --blue-track: #107d98;
+  }
+  
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      :root, .light, .light-theme {
+        --blue-1: oklch(99.3% 0.0037 220.8);
+        --blue-2: oklch(98% 0.0077 220.8);
+        --blue-3: oklch(95.9% 0.0205 220.8);
+        --blue-4: oklch(93.4% 0.0314 220.8);
+        --blue-5: oklch(90.1% 0.041 220.8);
+        --blue-6: oklch(86% 0.0505 220.8);
+        --blue-7: oklch(80.5% 0.0626 220.8);
+        --blue-8: oklch(72.8% 0.0841 220.8);
+        --blue-9: oklch(54.7% 0.0966 220.8);
+        --blue-10: oklch(50.1% 0.0966 220.8);
+        --blue-11: oklch(53.3% 0.0966 220.8);
+        --blue-12: oklch(34.1% 0.0441 220.8);
+  
+        --blue-a1: color(display-p3 0.0235 0.5137 0.7569 / 0.016);
+        --blue-a2: color(display-p3 0.0196 0.5569 0.7333 / 0.044);
+        --blue-a3: color(display-p3 0.0118 0.5647 0.8039 / 0.099);
+        --blue-a4: color(display-p3 0.0039 0.5412 0.7961 / 0.153);
+        --blue-a5: color(display-p3 0.0039 0.502 0.7255 / 0.212);
+        --blue-a6: color(display-p3 0.0039 0.4706 0.6588 / 0.287);
+        --blue-a7: color(display-p3 0.0039 0.4235 0.6196 / 0.381);
+        --blue-a8: color(display-p3 0 0.4275 0.6 / 0.526);
+        --blue-a9: color(display-p3 0 0.3333 0.4667 / 0.777);
+        --blue-a10: color(display-p3 0 0.298 0.4235 / 0.816);
+        --blue-a11: color(display-p3 0 0.3255 0.4549 / 0.793);
+        --blue-a12: color(display-p3 0 0.1098 0.1608 / 0.859);
+  
+        --blue-contrast: #fff;
+        --blue-surface: color(display-p3 0.9451 0.9765 0.9843 / 0.8);
+        --blue-indicator: oklch(54.7% 0.0966 220.8);
+        --blue-track: oklch(54.7% 0.0966 220.8);
+      }
+    }
+  }
+
 .article ol{
     list-style-position: inside;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.2;
+    margin: 0 0 1rem 0;
+    color: var(--blue-12);
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 0 1.2rem 0;
+    color: var(--blue-12);
+}
+.article {
+    display: flex;
+    flex-direction: column;
+}
+.description {
+    color: var(--blue-8);
+    margin-bottom: 1.5rem;
 }

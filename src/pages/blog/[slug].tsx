@@ -3,6 +3,8 @@ import Layout from '../../components/layout';
 import { getMarkdownContent, getBlogPosts } from '../../utils/markdownUtils';
 import { Box, Heading } from '@radix-ui/themes';
 import './styles.css';
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 export async function getStaticPaths() {
   const posts = getBlogPosts();
@@ -18,15 +20,15 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
   return { props: { content, data } };
 }
 
-export default function BlogPost({ content, data }: { content: string, data: any }) {
-    console.log(content)
+export default function BlogPost({ content, data, markdownContent }: { content: string, data: any, markdownContent: any }) {
   return (
     <Layout>
         <Box className='container'>
             <Heading as='h1' my='4'>{data.title}</Heading>
 
             <article className='article'>
-                <Box as="div" dangerouslySetInnerHTML={{ __html: content }} />
+                <ReactMarkdown className={'description'}>{content}</ReactMarkdown>
+                {/* <Box as="div" dangerouslySetInnerHTML={{ __html: content }} /> */}
             </article>
         </Box>
     </Layout>
