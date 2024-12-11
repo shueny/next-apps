@@ -24,3 +24,37 @@
 .card-back {
     transform: rotateY(180deg); /* 背面翻轉 */
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+.alert-message {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 1000;
+    animation: fadeIn 0.5s forwards; /* Fade in effect */
+}
+
+.alert-message-exit {
+    animation: fadeOut 0.5s forwards; /* Fade out effect */
+}

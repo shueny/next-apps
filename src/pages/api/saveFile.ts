@@ -16,14 +16,26 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         fs.mkdirSync(dirPath, { recursive: true }); // Create the directory if it doesn't exist
       }
 
-      fs.writeFile(filePath, content, (error) => {
-        // Save content to file
-        if (error) {
-          console.error(`保存文件時出錯: ${error.message}`);
-          return res.status(500).json({ error: error.message });
+      fs.readFile(filePath, 'utf8', (readError, existingContent) => {
+        if (readError) {
+          console.error(`读取文件时出错: ${readError.message}`);
+          return res.status(500).json({ error: readError.message });
         }
-        console.log('文件成功保存'); // Display success message
-        return res.status(200).json({ message: '文件成功保存' });
+
+        // Check if the file is not empty
+        const newContent = existingContent
+          ? `${existingContent}\n---\n${content}\n---\n`
+          : content;
+
+        fs.writeFile(filePath, newContent, (error) => {
+          // Save content to file
+          if (error) {
+            console.error(`保存文件时出错: ${error.message}`);
+            return res.status(500).json({ error: error.message });
+          }
+          console.log('文件成功保存'); // Display success message
+          return res.status(200).json({ message: '文件成功保存' });
+        });
       });
     } else {
       return res.status(500).json({ error: '需要伺服器端執行' });

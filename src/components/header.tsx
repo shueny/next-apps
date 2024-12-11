@@ -61,6 +61,7 @@ const NavigationMenuComponent = () => {
 					<NavigationMenu.Link
 						className="NavigationMenuLink"
 						href="https://github.com/shueny"
+						target="__blank"
 					>
 						Github
 					</NavigationMenu.Link>

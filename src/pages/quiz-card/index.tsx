@@ -1,8 +1,8 @@
 import { useRef, useState, useEffect } from "react";
 import type { ReactElement } from 'react'
 import Layout from '../../components/layout'
-import { ShuffleIcon,ChatBubbleIcon } from "@radix-ui/react-icons"
-import { Theme, Flex, Text, Button, Box, Card, Spinner, Popover } from "@radix-ui/themes";
+import { ShuffleIcon,ChatBubbleIcon, InfoCircledIcon,ExclamationTriangleIcon } from "@radix-ui/react-icons"
+import { Theme, Flex, Text, Button, Box, Card, Spinner, Popover, Callout } from "@radix-ui/themes";
 import { NextPageWithLayout } from "../_app";
 import { amber, cyan } from '@radix-ui/colors';
 import './styles.css';
@@ -16,7 +16,6 @@ type Question = {
     level: string;
 };
 
-// 初始化 Markdown 編輯器
 const mdParser = new MarkdownIt();
 
 const QuizCardPage: NextPageWithLayout = () => {
@@ -26,6 +25,9 @@ const QuizCardPage: NextPageWithLayout = () => {
 	const [loadingReact, setLoadingReact] = useState(false);
 	const [flippedJs, setFlippedJs] = useState(false);
     const [markdownContent, setMarkdownContent] = useState('');
+    const [calloutMessage, setCalloutMessage] = useState('');
+    const [calloutType, setCalloutType] = useState<'success' | 'error' | null>(null);
+    const [showCallout, setShowCallout] = useState(false);
 
     const mdEditorJS = useRef(null);
     const [jsAnswer, setJsAnswer] = useState('');
@@ -56,19 +58,16 @@ const QuizCardPage: NextPageWithLayout = () => {
 
     const handleEditorJsChange=({ html, text }: { html: string, text: string })=> {
         const newValue = text.replace(/\d/g, "");
-        console.log('handleEditorChange', html, text);
         setJsAnswer(newValue);
       }
 
     const handleEditorReactChange=({ html, text }: { html: string, text: string })=> {
         const newValue = text.replace(/\d/g, "");
-        console.log('handleEditorReactChange', html, text);
         setReactAnswer(newValue);
       }
 
     const handleSave = async (jsAnswer: string, question: string, type: 'js'|'react') => {
         const content = `# Question\n${question}\n\nType: ${type === 'js'? 'JS': 'React'}\n\n## Answer\n${jsAnswer}`;
-        console.log('Sending content to server:', content);
         const response = await fetch('./api/saveFile', {
             method: 'POST',
             headers: {
@@ -79,25 +78,47 @@ const QuizCardPage: NextPageWithLayout = () => {
 
         if (!response.ok) {
             const error = await response.json();
-            console.error(`Error saving file: ${error.error}`);
+            setCalloutMessage(`Error saving file: ${error.error}`);
+            setCalloutType('error');
+            setShowCallout(true);
+            setTimeout(() => setShowCallout(false), 1500);
         } else {
-            console.log('File saved successfully');
+            setCalloutMessage('File saved successfully');
+            setCalloutType('success');
+            // Fetch the answers.md content again after saving
+            const fetchMarkdown = async () => {
+                const response = await fetch('./api/getAnswers');
+                const data = await response.json();
+                setMarkdownContent(data.content);
+            };
+            fetchMarkdown();
+            setShowCallout(true);
+            setTimeout(() => setShowCallout(false), 1000);
         }
     };
 
     // Fetch the answers.md file when the component mounts
     useEffect(() => {
         const fetchMarkdown = async () => {
-            const response = await fetch('./quiz-card/answers.md');
-            const text = await response.text();
-            setMarkdownContent(text);
+            const response = await fetch('/api/getAnswers');
+            const data = await response.json();
+            setMarkdownContent(data.content);
         };
         fetchMarkdown();
     }, []);
-
 	return (
         <>
         <Flex gap="5" direction="column" mt="5">
+            {showCallout && calloutMessage && (
+                <Callout.Root className="alert-message" color={calloutType === 'success' ? 'cyan' : 'red'}>
+                    <Callout.Icon>
+                        {calloutType === 'success'? <InfoCircledIcon />: <ExclamationTriangleIcon/>}
+                    </Callout.Icon>
+                    <Callout.Text>
+                        {calloutMessage}
+                    </Callout.Text>
+                </Callout.Root>
+            )}
             <Flex gap="5" direction="column" mt="5">
                 <Flex justify={'center'}>
                     <Button size="2" radius="large" variant="soft" onClick={generateQuestions} loading={loadingJs || loadingReact} style={{display:'flex'}}>
@@ -150,7 +171,7 @@ const QuizCardPage: NextPageWithLayout = () => {
                     </Card>
                     <Card 
                         className={`card ${flippedJs ? 'flipped' : ''}`} 
-                        style={{ backgroundColor: cyan.cyan8, flex:1, minHeight: '200px', maxHeight: '60vh' }}
+                        style={{ backgroundColor: cyan.cyan4, flex:1, minHeight: '200px', maxHeight: '60vh' }}
                     >
                         <Flex gap="4" justify={'between'} direction="column" style={{height: '100%'}}>
                             <Flex gap="4" align="center" direction="column">
