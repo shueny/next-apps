@@ -68,7 +68,7 @@ const QuizCardPage: NextPageWithLayout = () => {
     const handleSave = async (jsAnswer: string, question: string, type: 'js'|'react') => {
         const content = `# Question\n${question}\n\nType: ${type === 'js'? 'JS': 'React'}\n\n## Answer\n${jsAnswer}`;
         console.log('Sending content to server:', content);
-        const response = await fetch('./quiz-card/api/saveFile', {
+        const response = await fetch('./quiz-card/saveFile.ts', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
