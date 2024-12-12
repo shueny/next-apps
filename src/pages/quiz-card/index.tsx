@@ -100,7 +100,7 @@ const QuizCardPage: NextPageWithLayout = () => {
     // Fetch the answers.md file when the component mounts
     useEffect(() => {
         const fetchMarkdown = async () => {
-            const response = await fetch('/api/getAnswers');
+            const response = await fetch('./api/getAnswers');
             const data = await response.json();
             setMarkdownContent(data.content);
         };
