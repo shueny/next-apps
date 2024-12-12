@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import type { ReactElement } from 'react'
 import Layout from '../../components/layout'
 import { ShuffleIcon,ChatBubbleIcon, InfoCircledIcon,ExclamationTriangleIcon } from "@radix-ui/react-icons"
-import { Theme, Flex, Text, Button, Box, Card, Spinner, Popover, Callout } from "@radix-ui/themes";
+import { Theme, Flex, Text, Button, Box, Card, Spinner, Popover, Callout,ScrollArea } from "@radix-ui/themes";
 import { NextPageWithLayout } from "../_app";
 import { amber, cyan } from '@radix-ui/colors';
 import './styles.css';
@@ -108,7 +108,7 @@ const QuizCardPage: NextPageWithLayout = () => {
     }, []);
 	return (
         <>
-        <Flex gap="5" direction="column" mt="5">
+        <Flex gap="5" direction="column" mt="5" maxHeight={'calc(100vh - 50px)'}>
             {showCallout && calloutMessage && (
                 <Callout.Root className="alert-message" color={calloutType === 'success' ? 'cyan' : 'red'}>
                     <Callout.Icon>
@@ -214,7 +214,9 @@ const QuizCardPage: NextPageWithLayout = () => {
                     </Card>
                 </Flex>
             </Flex>
-            <ReactMarkdown>{markdownContent}</ReactMarkdown>
+            <ScrollArea type="scroll" scrollbars="vertical" style={{ height: '60vh' }}>
+                <ReactMarkdown>{markdownContent}</ReactMarkdown>
+            </ScrollArea>
         </Flex>
         </>
 	);

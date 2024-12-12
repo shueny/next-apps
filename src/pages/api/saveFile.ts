@@ -32,7 +32,7 @@ export default async function handler(
 
     // Ensure this code runs only in a Node.js environment
     if (typeof window === 'undefined') {
-      const dirPath = path.join(process.cwd(), 'quiz-card'); // Specify the directory path
+      const dirPath = path.join(process.cwd(), 'src', 'pages', 'quiz-card'); // Specify the directory path
       const filePath = path.join(dirPath, 'answers.md'); // Specify the file path
 
       // Check if the directory exists, if not, create it
@@ -48,7 +48,7 @@ export default async function handler(
 
         // Append new content
         const newContent = existingContent
-          ? `${existingContent}\n---\n${content}\n---\n`
+          ? `${existingContent}\n\n---\n\n${content}`
           : content;
 
         // Write file

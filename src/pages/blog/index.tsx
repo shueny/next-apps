@@ -6,6 +6,7 @@ import { Flex, Box, Card, Text, Heading } from '@radix-ui/themes';
 interface BlogPost {
   slug: string;
   description: string;
+  
   [key: string]: any;
 }
 
